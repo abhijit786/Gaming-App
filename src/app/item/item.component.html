@@ -1,0 +1,43 @@
+<div class="row ml-5 mr-5 animated fadeIn">
+
+<div *ngFor="let item of items;index as i" class="mb-5 col-sm-6 col-md-3 col-xs-12  d-flex align-items-stretch">
+
+
+<!-- Card -->
+<div class="card" >
+
+  <!-- Card image -->
+  <div class="text-center overlay">
+    <img class="mt-2" [src]="item.product.images[0].url"
+      alt="Card image cap" height="120px" wdith="200px">
+    <a href="#!">
+      <div class="mask rgba-white-slight"></div>
+    </a>
+  </div>
+
+  <!-- Card content -->
+  <div class="card-body">
+
+    <!-- Title -->
+    <h6 class="card-title">{{item.product.name}}</h6>
+    <!-- Text -->
+
+
+
+  
+
+  </div>
+  <!-- Button -->
+  <div class="text-center card-footer">
+    <p class="card-title">{{item.product.price}} {{item.product.currency}}</p>
+
+    <a href="#" class="btn btn-danger align-self-end">Buy</a>
+    <a href="#" class="btn btn-warning align-self-end"><i class="fa fa-shopping-cart"></i></a>
+
+  </div>
+</div>
+<!-- Card -->
+
+</div>
+
+</div>
